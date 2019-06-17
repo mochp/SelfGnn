@@ -60,5 +60,5 @@ feature["country"] = pd.Series(country)
 
 feature = feature.drop(19064)
 answers = answers.drop(19064)
-answers.to_excel("answers.xlsx", index=None)
-feature.to_excel("feature.xlsx", index=None)
+answers.to_excel("data/BIG5/answers.xlsx", index=None)
+feature.to_excel("data/BIG5/feature.xlsx", index=None)

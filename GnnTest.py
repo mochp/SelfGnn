@@ -24,8 +24,6 @@ print("Restoring model from " + best_path)
 saver.restore(sess, best_path)
 print("DONE!")
 
-#attention = sess.run(train_graph.attention)
-#training
 
 dic = {}
 dic["total"] = 0

@@ -7,14 +7,6 @@ import pandas as pd
 import yaml
 
 
-# with open('config.yml','rb') as file_config:
-#    config = yaml.load(file_config)
-#
-#answers = pd.read_excel(config["answers"]["path"])
-#feature = pd.read_excel(config["feature"]["path"])
-#answers = np.array(answers)
-#feature = np.array(feature)
-
 
 class DataStream(object):
     def __init__(self, answers, feature, config, batch_size):
@@ -62,12 +54,26 @@ class DataStream(object):
 
 
 def create_test():
-    with open('config.yml', 'rb') as file_config:
+    with open('data/BIG5/config.yml', 'rb') as file_config:
         config = yaml.load(file_config)
 
-    answers = np.load("answers.npy")
-    feature = np.load("feature.npy")
+    answers = np.load("data/BIG5/answers.npy")
+    feature = np.load("data/BIG5/feature.npy")
     return answers, feature, config
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #data = DataStream(answers, feature,config)
 #B,C,D = data.next_feed_dict(100)
@@ -79,3 +85,11 @@ def create_test():
 #feature = np.array(feature)
 # np.save("answers.npy",answers)
 # np.save("feature.npy",feature)
+
+# with open('config.yml','rb') as file_config:
+#    config = yaml.load(file_config)
+#
+#answers = pd.read_excel(config["answers"]["path"])
+#feature = pd.read_excel(config["feature"]["path"])
+#answers = np.array(answers)
+#feature = np.array(feature)
