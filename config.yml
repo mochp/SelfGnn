@@ -1,0 +1,9 @@
+answers:
+  path: data/BIG5/answers.xlsx
+  dim: 5
+feature:
+  path: data/BIG5/feature.xlsx
+  dim: [14, 5, 3, 4, 4, 5, 25]
+sample: 19718
+question_var: 20
+hidden_size: 300

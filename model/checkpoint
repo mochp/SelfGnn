@@ -1,0 +1,2 @@
+model_checkpoint_path: "gnn.best.model"
+all_model_checkpoint_paths: "gnn.best.model"
